@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
-@Repository
+
 public class MemoryMemberRepository implements MemberRepository{
     private static Map<Long, Member> store = new HashMap<>(); // 실무에서는 동시성 문제때문에 Conquorer 데시벨?로 써야함
     private static long sequence = 0L;
